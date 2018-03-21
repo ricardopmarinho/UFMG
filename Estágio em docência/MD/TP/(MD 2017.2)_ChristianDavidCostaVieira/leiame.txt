@@ -1,0 +1,30 @@
+DCC111 -- Matemática Discreta
+Trabalho Prático: Análise Combinatória
+Aluno: Christian David Costa Vieira - 2014106325
+-------------------------------------------------------------------------------
+1). Ambiente Computacional:
+1.1). OS GNU/Linux Ubuntu 5.4.0-6ubuntu1~16.04.4
+1.2). gcc version 5.4.0
+
+1). Para compilar os programas:
+$ gcc somamax.c -Wall -Wextra -std=c99 -o somamax
+$ gcc qmagico.c -Wall -Wextra -std=c99 -o qmagico
+
+Opcionalmente, há um makefile para a compilação automática, bastando invocá-lo 
+da seguinte forma (dentro do diretorio src): $ make
+
+Os arquivos executáveis somamax e qmagico serão gerados após o processo de 
+compilação. Para executá-los: 
+1). somamax:
+  O somamax poderá ser executado da seguinte forma: $ ./somamax n {m}
+  em que n representa o número de elementos {m} na linha de argumentos.
+  Exemplo de uso: $ ./somamax 10 31 -41 59 26 -53 58 97 -93 -23 84
+
+
+2). qmagico:
+  O qmagico poderá ser executado da seguinte forma: $ ./qmagico n
+  em que n representa a dimensão do quadrado mágico (valores válidos 3, 4 e 5).
+  Exemplo de uso: $ ./qmagico 4
+
+-------------------------------------------------------------------------------
+

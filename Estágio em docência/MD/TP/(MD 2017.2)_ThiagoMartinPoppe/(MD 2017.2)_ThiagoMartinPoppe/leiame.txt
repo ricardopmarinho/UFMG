@@ -1,0 +1,11 @@
+Ambiente computacional aonde o mesmo foi desenvolvido -> Linux, distribuição Ubuntu (compilado no GCC)
+Ambiente computacional para executar o TP -> Linux (compilador GCC) (mas, também pode usar outros, porém, os acentos sofrerão algumas mudanças, podendo tornar as mensagens ilegíveis)
+
+Instruções para a execução dos dois arquivos .c sem erros:
+
+-> Favor não entrar com caracteres!! Caso o usuário entre com caracteres, o programa irá ficar em um loop infinito. Para sair do mesmo,
+o usuário deve forçar a parada do mesmo (ctrl + c).
+
+-> Caso o usuário digite um número fora do intervalo solicitado, o programa exibe uma mensagem de erro, solicitando a entrada de um número válido.
+
+Obs.: Durante a execução do arquivo somamax.c, caso a entrada seja por exemplo 1 0 0, ele considerará o "subvetor" {1, 0, 0} como o que possui a maior soma. Tendo portanto os índices 1 a 3.

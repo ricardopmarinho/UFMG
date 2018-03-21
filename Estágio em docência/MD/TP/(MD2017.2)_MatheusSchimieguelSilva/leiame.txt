@@ -1,0 +1,6 @@
+para executar o arquivo somamax.c o primeiro numero a ser digitado corresponde ao tamanho do vetor 
+a proxima linha deve-se digitar os numeros do vetor separado por espaço.
+obs: para numeros negativos o sinal de menos deve estar a frente e e sem nenhum espaço entre o algarismo e o sinal
+
+para o arquivo qmagico.c o usuario digita o numero de n de lados do quadrado
+e programa gera a saida.	 

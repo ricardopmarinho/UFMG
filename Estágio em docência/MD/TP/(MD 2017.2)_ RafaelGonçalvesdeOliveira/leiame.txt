@@ -1,0 +1,6 @@
+Soma Máxima
+O programa inicia lendo n, e em seguida recebe os valores do vetor separadados por um espaço em branco, em seguida imprimir a soma máxima e o intervalo referente a mesma, e fica nesse loop.
+O programa encerra quando n = 0. Caso o vetor receba apenas números negativos, retornará soma = 0 e indices 0 e 0.
+
+Quadrado Mágico
+O programa inicia e simplesmente imprime as soluções para quadrados mágicos de lado 3 até 10.

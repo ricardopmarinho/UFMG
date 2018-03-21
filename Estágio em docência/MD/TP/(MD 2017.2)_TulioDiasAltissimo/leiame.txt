@@ -1,0 +1,3 @@
+Os trabalhos práticos foram feitos em ambiente com sistema operacional Windowns 7
+Foi usado a IDE Dev C++
+As entradas devem ser números como especificados no documento doc.pdf para cada um dos programas

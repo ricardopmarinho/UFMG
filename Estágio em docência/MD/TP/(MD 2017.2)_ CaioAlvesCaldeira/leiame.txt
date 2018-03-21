@@ -1,0 +1,4 @@
+Para executar os programas não é necessária a importação de nenhuma biblioteca ou coisa do tipo.
+O compilador utilizado foi o GCC.
+O programa foi feito no linux.
+Para rodar o programa é necessário que seja feita sua compilação no gcc.

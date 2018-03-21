@@ -1,0 +1,3 @@
+Cara professor, meu trabalho foi programado na plataforma linux ubuntu.Peço para que não utilize entradas inapropiadas, uma vez que não foram consideradas todas as situações possiveis de entradas, para executar o programa.
+
+atenciosamente , Nathan Nogueira.

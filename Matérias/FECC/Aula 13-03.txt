@@ -1,0 +1,5 @@
+13/03
+4. P(UAi) <= soma P(Ai) -> é igual quando os Ai forem disjuntos
+
+15/03
+P(A|B) = P(B) -> quando A ocorre e não tem nenhuma influência sobre B0

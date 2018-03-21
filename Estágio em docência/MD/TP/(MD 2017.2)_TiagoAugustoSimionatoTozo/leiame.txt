@@ -1,0 +1,3 @@
+O tp foi feito no codeblocks, o somamax tem as entradas como dito 
+segundo as instruções, a primeira linha é a entrada de n e a segunda linha os valores separados por espaço.
+O qmagico n tem entrada nenhuma e escreve os quadrados e as somas assim que o programa é rodado.

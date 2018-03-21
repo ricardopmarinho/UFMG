@@ -1,0 +1,16 @@
+INSTRUÇÕES
+
+Os seguintes comandos deverão ser executados em ambiente Linux, via terminal.
+As implementações dos programas enviados foram realizadas na distribuição ubuntu 16.04 LTS,
+e testado nos computadores do DCC
+
+
+->Para o arquivo "somamax.c", utilizar o seguinte comando de compilação:
+  compilação: gcc somamax.c -o somamax
+  execução  : entrada por teclado, de acordo com o que foi descrito no enunciado do trabalho.
+	      primeiro é lido um valor N, que representa o tamanho do vetor. Após isso, são lidos N 		      valores do vetor a ser analisado.
+
+->Para o arquivo "qmagico.c", utilizar o seguinte comando de compilação: 
+  compilação: gcc qmagico.c -lm -o qmagico
+  execução  : entrada por teclado, fornecendo um valor inteiro para geração do quadrado magico
+	      que será impresso na tela

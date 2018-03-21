@@ -1,0 +1,14 @@
+Instruções de Execução - Trabalho Prático
+
+Questão 1 - Soma Máxima:
+
+Programa desenvolvido no ambiente Dev-C++. Ao executá-lo é requerido o valor do tamanho do vetor n, o programa apenas aceita valores entre 3 e 20. 
+Em seguida, são solicitados os n valores a serem armazenados no vetor. Estes valores devem ser escritos todos na mesma linha, separados por um espaço entre cada um, considerando apenas números positivos e negativos.
+Caso sejam digitados caracteres diferentes (letras, caracteres especiais, etc.) o programa não funcionará corretamente. Não deve-se digitar enter entre os números, apenas após ter escrito todos os números corretamente para confirmar a entrada.
+O limite de cada número que pode ser armazenado no vetor é o valor de uma variável inteiro (4 bytes - Valores entre -2.147.483.648 e 2.147.483.647). Valores maiores que este irão causar o funcionamento errôneo do programa.
+A saída fornece a soma e os índices do sub-vetor. Caso o vetor seja negativo, apenas é informado que a soma máxima é 0 por definição da questão. 
+
+Questão 2 - Quadrado Mágico
+
+Programa desenvolvido no ambiente Dev-C++. Não são exigidos valores de entrada, logo, ao executá-lo, os valores referentes as contantes mágicas e o quadrado mágico de valores de 3 a 10 são mostrados na tela como saída.
+ 

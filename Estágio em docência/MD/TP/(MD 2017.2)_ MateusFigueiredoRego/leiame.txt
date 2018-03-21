@@ -1,0 +1,5 @@
+Compilar e executar em ambiente linux.
+
+somamax.c entrar com o tamanho do vetor e com os valores dos índices.
+qmagico.c entrar com o tamanho do lado do quadrado.
+

@@ -1,0 +1,18 @@
+SOMA MÁXIMA (somamax.c) 
+O programa deverá ser executado em ambiente linux.
+O usuário deverá fornecer ao programa duas linhas:
+	a primeira deverá conter um inteiro n, tal que 3<=n<=20;
+	a segunda deverá conter n inteiros, separados por um espaço em branco;
+O programa deverá fornecer o valor da soma máxima e os índices do sub-vetor na forma:
+Soma: X
+Índices: X a X.
+Se todos os n números forem negativos, o programa imprimirá:
+Soma: 0.
+
+QUADRADO MÁGICO (qmagico.c)
+O programa deverá ser executado em ambiente linux.
+O programa exibirá a mensagem "Digite um número n entre 3 e 5: ";
+O usuário deverá fornecer ao programa um inteiro n, tal que 3<=n<=5;
+O programa imprimirá o valor de n, o valor da soma e o quadrado mágico na forma:
+n = X, Soma = X
+(QUADRADO MÁGICO)

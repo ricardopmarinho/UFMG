@@ -1,0 +1,7 @@
+O programa foi criado no DevC++, em linguagem C no Windows.
+No TP referente a Soma Máxima, a primeira linha de entrada é a quantidade de elementos do Vetor, e a segunda linha são a definição do valor de cada elemento.
+Exemplo:
+12
+31 -41 59 26 -53 58 97 -93 -23 84 65 30
+
+No TP referente ao Quadrado Mágico, a única entrada é o valor N da dimensão do Quadrado Mágico NxN, no caso, 3, 4 ou 5.

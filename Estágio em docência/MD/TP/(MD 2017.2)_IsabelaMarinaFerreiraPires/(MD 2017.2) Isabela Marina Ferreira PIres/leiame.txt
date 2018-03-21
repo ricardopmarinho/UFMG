@@ -1,0 +1,9 @@
+Instruções para execução dos códigos:
+
+somax.c - O código foi criado e testado no Sublime para Windows 7, juntamente com o compilador gcc também para Windows.
+          As entradas são no formato: número de entradas\n valor1 valor2 valor3 valor4 ... valor20
+          Ambas as entradas suportam apenas números, favor não entrar com caracteres nem exceder os valores e quantidades
+          numéricas permitidas paracada entrada (ex. Entrada 1: 3<=entrada<=20 ou Entrada 2: se foram declaradas 3 entradas,
+          favor não entrar com mais de 3 números).
+qmagico.c - O código foi criado e testado no Sublime para Linux.
+            A entrada suporta apenas números, favor não entrar com caracteres nem exceder o valor  3<=entrada<=5

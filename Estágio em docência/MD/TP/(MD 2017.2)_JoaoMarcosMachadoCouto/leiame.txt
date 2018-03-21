@@ -1,0 +1,13 @@
+João Marcos Couto
+Matemática Discreta (2017.2)
+
+Instruções de execução 
+
+Soma máxima(somamax.c)
+Ambiente computacional: desenvolvido em ambiente Windows utilizando a IDE CodeBlocks, este arquivo pode ser compilado em qualquer compilador C-Ansi. Caso seja compilado em ambiente Linux/UNIX, transferir o arquivo em modo ASCII ou após a transferência em modo binário, executar o comando “dos2unix somamax.c”. Após a compilação, executar o programa com entradas no padrão a seguir
+Entrada: A primeira entrada deve ser o número de elementos do vetor seguido de nova linha (enter se for execução manual). Tendo feito isso, para a segunda e última entrada basta colocar os valores do vetor separados entre si por um caractere vazio (barra de espaço se for execução manual)
+
+Quadrado magico
+Ambiente computacional: desenvolvido em ambiente Windows utilizado a IDE CodeBlocks, este arquivo pode ser compilado em qualquer compilador C-Ansi. Caso seja compilado em ambiente Linux/UNIX, transferir o arquivo em modo ASCII ou após a transferência em modo binário, executar o comando “dos2unix qmagico.c”. Após a compilação, executar o programa com entradas no padrão a seguir
+Entrada: A primeira a única entrada para este programa deve ser o número de elementos presentes em um lado do quadrado a ser gerado, isto é, o tamanho do lado dele, seguido de nova linha (enter se for execução manual)
+

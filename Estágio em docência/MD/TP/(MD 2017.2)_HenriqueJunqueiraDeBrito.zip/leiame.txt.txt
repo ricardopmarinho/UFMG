@@ -1,0 +1,15 @@
+Intruções para a execução:
+
+Ambos os programas, somamax e qmagico, devem ser executados no Windows.
+
+Somamax:
+A entrada deve ter 2 linhas: a primeira sendo um número inteiro positivo entre 3 e 20, que indica o
+tamanho do vetor em questão. A segunda linha deve ser os valores dos elementos do vetor em questão 
+separados por um espaço em branco. 
+O programa irá imprimir a soma e os indices do sub-vetor com a maior soma.
+Para analisar outro vetor, o programa deverá ser executado novamente.
+
+Qmagico:
+A entrada deve conter apenas 1 número inteiro entre 3 e 5, que indica a ordem do quadrado mágico a ser impresso.
+O programa irá imprimir o quadrado mágico correspondente à entrada.
+Para imprimir um outro quadrado mágico, o programa deve ser executado novamente.

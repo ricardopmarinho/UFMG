@@ -1,0 +1,7 @@
+     O ambiente computacional utilizado foi o Windows 7 Professional 32 bits utilizando o programa Dev-C++.
+
+     No programa de Soma Máxima, deve entrar com o valor de 'n' e após isso deverá escrever o vetor com os números
+espaçados.
+
+     No programa do Quadro Mágico, deverá apenas entrar com o valor de 'n' escolhido, sendo n um número maior igual
+a 3 e menor igual a 5.

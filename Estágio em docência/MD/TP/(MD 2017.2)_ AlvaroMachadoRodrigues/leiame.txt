@@ -1,0 +1,2 @@
+Progamas testados e executados em platarforma Linux.
+Compilador utilizado: GNU Compiler Collection.

@@ -1,0 +1,24 @@
+	Instruções necessárias:
+
+Observação geral: Tanto o código do exercício 1 quanto o  do exercício 2 possuem ao seu final um comando de system("pause")
+para evitar que o prompt se feche automaticamente em algumas máquinas.
+O código foi desenvolvido no windows 10 no Dev-C++
+
+Exercício 1: Soma máxima:
+
+O usuário deverá entrar inicialmente com o tamanho do vetor que ele irá inserir
+e logo apos os elementos do vetor separados com espaço
+(A instrução acima está conforme o exemplo de entrada descrito nas instruções do trabalho)
+(A saída que resultará o programa também está conforme o exemplo descrito  mas instruções do trabalho)
+
+
+Exercício 2: Quadrados mágicos:
+
+Ao executar o código, resultará na tela de impressões de oito quadrados mágicos diferentes, sendo eles:
+Um quadrado mágico de lado 3, Um quadrado mágico de lado 4, Um quadrado mágico de lado 5
+Um quadrado mágico de lado 6, Um quadrado mágico de lado 7, Um quadrado mágico de lado 8
+Um quadrado mágico de lado 9 e um quadrado mágico de lado 10.
+
+A forma como esses quadrados são montados está descrita na documentação. A impressão direta ocorre pois
+ficou vago nas instruções do trabalho se o usuário entraria com o número do lado do quadrado ou 
+poderia imprimir todos os quadrados mágicos que o trabalho pede.
