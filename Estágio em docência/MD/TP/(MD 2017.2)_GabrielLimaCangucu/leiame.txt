@@ -1,5 +1,0 @@
-Os arquivos foram compilados e executados no sistema Ubuntu, em máquinas do CRC na UFMG.
-
-Para o programa "somamax", introduza na primeira linha da entrada o valor n que definirá o número de posições do vetor e, em seguida, digite os n números que ocuparão as posições do vetor.
-
-Já para "qmagico", introduza os números 3, 4 ou 5 para definir o tamanho do quadrado mágico a ser gerado. Outros valores devem gerar resultados inesperados.

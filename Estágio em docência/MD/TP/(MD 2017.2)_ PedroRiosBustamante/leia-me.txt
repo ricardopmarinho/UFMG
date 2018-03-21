@@ -1,4 +1,0 @@
-	Os programas devem ser executados no Windows, eles foram feitos no Devc++ na linguagem C.
-	O primeiro programa aceita entradas na forma de int, deve-se digitar primeiramente o valor de n (sendo 3 = n = 20, nas especificações do TP), que define o numero de elementos do vetor. Depois um por um os valores do vetor. 
-Obs: caso na entrada seja inserido um vetor contendo a soma máxima em mais de uma sequência o programa considerará a com menores índices como a soma máxima.
-	No segundo programa a entrada deve ser dada por um número maior ou igual a três e menor ou igual a cinco, é valido colocar que ele também funciona para valores ímpares , maiores do que cinco.

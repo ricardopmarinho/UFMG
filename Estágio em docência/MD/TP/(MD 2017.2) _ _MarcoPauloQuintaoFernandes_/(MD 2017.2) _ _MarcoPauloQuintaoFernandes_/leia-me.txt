@@ -1,8 +1,0 @@
-compile com 
-gcc nomearquivo.c -std=c99 -O2 -o exe
-
-execute com o comando 
-./exe 
-
-digite a entrada e espere a saida na saida padrao;
-é previsto que para n=4 no quadrado magico demore 22 horas mais ou menos.

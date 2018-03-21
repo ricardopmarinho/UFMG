@@ -1,2 +1,0 @@
-Ambos os arquivos podem ser executados em linux ou windows, mas eu particularmente fiz o programa usando um computador Windows.
-Após execução apenas forneça as entradas e de enter que o programa produzirá as saídas.

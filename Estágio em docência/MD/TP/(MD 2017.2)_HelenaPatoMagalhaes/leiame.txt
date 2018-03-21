@@ -1,1 +1,0 @@
-Os códigos foram escritos no programa DevC++ versão 5.11, em um computador com sistema operacional Windows 10 Home, versão 1703 de 64 bits

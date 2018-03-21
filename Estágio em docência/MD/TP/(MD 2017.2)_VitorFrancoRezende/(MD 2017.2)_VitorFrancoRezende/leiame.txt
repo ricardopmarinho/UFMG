@@ -1,9 +1,0 @@
-                                      >>>Instruções de Execução<<<
-
-1) Os programas foram criados no editor de texto subline, no Windows então para evitar problemas de execução deverão ser rodados no Windows.
-
-2) Observação: Em ambos programas suas entradas funcionam somente com números inteiros favor não inserir caracteres.  
-
-3) Ambos programas foram compilados e executados no Dev-C++, o ideal seria utilizar ele também.
-
-4) Para ler os comentários dos programas perfeitamente seria ideal abri-los em um editor de texto.

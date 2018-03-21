@@ -1,5 +1,0 @@
-Para compilar o trabalho prático, utilize os comandos:
-    gcc somamax.c -o soma
-e
-    gcc qmagico.c -o qmagico
-no terminal de seu sistema operacional.
