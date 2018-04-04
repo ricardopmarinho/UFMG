@@ -94,5 +94,49 @@
 			$[X=0]=\lbrace\omega \in \Omega:X(\omega)=1\rbrace=\lbrace\omega \in \Omega: \omega \in \lbrace(\neg c,\neg c,\neg c,\cdots,\neg c)\rbrace\rbrace=P(\neg c~no~1º)\times P(\neg~c~no~2º)\times \cdots = (1-\theta)\times(1-\theta)\cdots = (1-\theta)^{n}$
 			
 		\end{itemize}
+		
+		\item 27/03
+		
+		$P(Y \in (y_0\pm \frac{\delta}{2}))~=~\int_{y_0-\frac{\delta}{2}}^{y_0+\frac{\delta}{2}}f^{*}(y)dy\approx~f^{*}(y_0)2\times\frac{\delta}{2}=f^{*}(y_0)\times\delta$
+		
+		Teste de Kolmogorov:
+		
+		$\sqrt{n}(D_n)\rightarrow~K$, onde K é uma Variável Aleatória contínua.
+		
+		Se o modelo é o verdadeiro, quando comparado com os dados, a distância entre eles multiplicado por $\sqrt{n}$ vai cair dentro da densidade de K.
+		Se não cair, provavelmente seu modelo não é adequado.
+		Quanto maior o número de dados, mais confiável o resultado.
+		
+		\item 03/04
+		Variáveis aleatórias: Lista de valores possíveis + probabilidades associadas
+		
+		\begin{tabular}{|c|c|c|}
+			\hline
+			& Discretas & Contínuas\\
+			\hline
+			Valores & 0,1,2,...& [0,1] ou [0,$\infty$)\\
+			\hline
+			Probabilidades & $p_0,p_1,p_2,...$ & Densidade sob a curva\\
+			\hline
+		\end{tabular}
+		
+		\begin{tabular}{|c|c|}
+		\hline
+		& $E(X)$\\
+		\hline
+		Discreta & $\sum_i x_i\times~P(X=x_i)$\\
+		\hline
+		Contínua & $\int x\times~f(x)dx$\\
+		\hline
+		\end{tabular}
+		
+		Teste qui-quadrado:
+		Compara o modelo com os dados.
+		Serve para dados contínuos e discretos.
+		
+		pchisq(15,4)-pchisq(10,4) $\rightarrow $ comando em R para saber o valor do teste qui-quadrado no intervalo [10,15] com 4 graus de liberdade.
+		
+		pchisq(1.13,4) $\rightarrow$ probabilidade de uma distribuição qui-quadrado com 4 graus de liberdade ser menor do que 1.13
+		1-pchisq(1.13,4)=pvalors
 	\end{itemize}
 \end{document}
