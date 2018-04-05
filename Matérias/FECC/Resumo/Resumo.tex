@@ -1,0 +1,239 @@
+\documentclass[11pt,a4paper]{book}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[inline]{enumitem}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\textbf{\color{black}},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single,
+    escapeinside={(*}{*)},
+    language=C
+}
+
+\makeatletter
+% This command ignores the optional argument for itemize and enumerate lists
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \quad\@itemlabel\hspace{\labelsep}
+\fi}
+\makeatother
+
+\newcommand{\onestaritem}{\refstepcounter{enumi}\item[$*$\theenumi.]}
+\newcommand{\twostaritem}{\refstepcounter{enumi}\item[$**$\theenumi.]}
+
+\title{Resumo: Fundamentos Estatísticos para Ciência dos Dados}
+\author{Ricardo Pagoto Marinho}
+
+\begin{document}
+\maketitle
+	\begin{itemize}
+		\item Regra de Bayes
+		Inverte as probabilidades de interesse.
+		
+		Exemplo:
+		
+		$\mathbb{P}(A|B) = \frac{\mathbb{P}(B|A)\mathbb{P}(A)}{\mathbb{P}(B)}$
+		
+		\item Função distribuição acumulada de probabilidade
+		$\mathbb{F}(x)$ definida $\forall~x~\in~\mathbb{R}$ é dada por:
+		\begin{align*}
+			\mathbb{F}: & \mathbb{R}\rightarrow~[0,1]\\
+			& x\rightarrow~\mathbb{F}(x)=\mathbb{P}(X\leq~x)
+		\end{align*}
+		
+		Caso geral de $\mathbb{F}(x)$
+		\begin{align*}
+			\mathbb{F}(x)=\mathbb{P}(X\leq~x)=\sum_{x_i\leq~x}p(x_i)
+		\end{align*}
+		
+		\item Esperança matemática ($\mathbb{E}(X)$)
+		
+		O valor esperado de uma V.A. discreta é a soma de seus valores possíveis ponderados pelas suas probabilidades respectivas.
+		\begin{align*}
+			\mathbb{E}(X)=\sum_i~x_ip(x_i)
+		\end{align*}
+		
+		Suponha que numa amostra grande de instâncias, $x_i$ apareceu $N_i$ vezes.
+		A probabilidade de $x_i$ ocorrer na amostra é sua frequência relativa, \textit{i.e.}:
+		\begin{align*}
+			p(x_i)=\mathbb{P}(X=x_i)\approx~\frac{N_i}{N}
+		\end{align*}
+		
+		Logo:
+		\begin{align*}
+			\mathbb{E}(X)=\sum_i~x_ip(x_i)\approx \sum_i~x_i\frac{N_i}{N}
+		\end{align*}
+		
+		Se a amostra for grande, o número teórico $\mathbb{E}(X)$ é aproximadamente igual à média aritmética dos N elementos da amostra.
+		
+		\item Distribuição de Bernoulli
+		É a distribuição mais simples: dois resultados possíveis
+		$X(\omega)~\in~\lbrace~0,1\rbrace~\forall~\omega~\in~\Omega$
+		
+		Duas probabilidades são definidas:
+		\begin{itemize}
+			\item p(0)=$\mathbb{P}(X=0)=\mathbb{P}(\omega~\in~\Omega:X(\omega)=0)$
+			\item p(1)=$\mathbb{P}(X=1)=\mathbb{P}(\omega~\in~\Omega:X(\omega)=1)$
+		\end{itemize}
+		
+		$p(0)+p(1)=1\rightarrow~p(1)=1-p(0)$
+		
+		É comum escrever $p(1)=p$ e $p(0)=q)$.
+		Daí, $\mathbb{E}(X)=1\times p+0\times(1-p)=p$
+		
+		Como a média aritmética dessa distribuição é a proporção de 1's na amostra:
+		\begin{align*}
+			\mathbb{E}(X)\approx\hat{p}=\frac{1}{N}\sum_i~x_i
+		\end{align*}
+		
+		\item Distribuição Binomial
+		
+		Frequentemente utilizada quando um número máximo possível grande de $n$ de repetições e $\theta$ muito pequeno.
+		
+		$n$ repetições independentes de um experimento de Bernoulli: sucesso ou fracasso.
+		Probabilidade de sucesso é igual a $\theta\in[0,1]$ 
+		
+		A V.A. $X$ conta o número total de sucessos: $X\sim~Bin(n,\theta)$.
+		Os valores possíveis são: $0,1,2,\cdots,n$ e suas probabilidades, respectivamente são: $(1-\theta)^n,~n\theta(1-\theta),\cdots,\theta^n$
+		
+		Exemplo: $n$ lançamentos de uma moeda não viciada.
+		\begin{align*}
+			Cara&\rightarrow~C\\
+			Coroa&\rightarrow~\tilde{C}
+		\end{align*}
+		$P(X=0) = (1-\theta)^{n}$
+			
+		$[X=0]=\lbrace\omega \in \Omega:X(\omega)=0\rbrace=\lbrace\omega \in \Omega: \omega \in \lbrace(\tilde{C},\tilde{C},\tilde{C},\cdots,\tilde{C})\rbrace\rbrace=P(\tilde{C}~no~1º)\times P(\tilde{C}~no~2º)\times \cdots = (1-\theta)\times(1-\theta)\cdots = (1-\theta)^{n}$
+		
+		\begin{itemize}
+			\item Fórmula geral:
+			\begin{align*}
+				\mathbb{P}(Y=k)=\frac{n!}{k!(n-k)!}\theta^k(1-\theta)^{n-k}
+			\end{align*}
+			\item $\mathbb{E}(Y)=n\theta$ e DP=$\sqrt{\mathbb{V}(Y)}=\sqrt{n\theta(1-\theta)}$
+		\end{itemize}
+		
+		\item Distribuição Multinomial
+		
+		Mais de duas categorias de resultados nos experimentos, diferente da Binomial que são só duas (1 ou 0).
+		Ao fim de $n$ lançamentos, teremos um vetor aleatório multinomial que conta quantas vezes cada categoria apareceu no experimento.
+		Temos $k$ categorias:
+		\begin{align*}
+			(N_1,N_2,\cdots,N_k)\sim~\mathbb{M}(n;\theta_1,\cdots,\theta_k)
+		\end{align*}
+		Sendo que $\theta_1,\cdots,\theta_k$ são as probabilidades de cada categoria.
+		
+		Exemplo: lançamento de um dado.
+		$k=6$
+		\begin{align*}
+			N_1&=n^o~de~lançamentos~na~categoria~1\\
+			N_2&=n^o~de~lançamentos~na~categoria~2\\
+			N_3&=n^o~de~lançamentos~na~categoria~3\\
+			&\vdots \\
+			N_6&=n^o~de~lançamentos~na~categoria~6\\
+		\end{align*}
+		\begin{align*}
+			(N_1,N_2,\cdots,N_6)\sim~\mathbb{M}(n;\theta_1,\cdots,\theta_6)
+		\end{align*}
+		
+		Podemos escrever a Binomial como uma Multinomial de duas categorias: sucesso e fracasso.
+		X é o número de sucessos em $n$ repetições.
+		
+		\begin{align*}
+			(X,n-X)\sim~\mathbb{M}(n;\theta,1-\theta)
+		\end{align*}
+		
+		A probabilidade de ocorrer uma configuração do vetor aleatório é:
+		
+		\begin{align}
+			\mathbb{P}(\textbf{N}=(n_1,n_2,\cdots,n_k))=\frac{n!}{n_1!n_2!\cdots n_k!}\theta_{1}^{n_1}\theta_{2}^{n_2}\cdots\theta_{k}^{n_k}
+			\label{eq:eq1}
+		\end{align}
+		
+		Exemplo:
+		8 lançamentos de um dado.
+		A probabilidade de:
+		\begin{align*}
+			\mathbb{P}(\textbf{N}=(2,0,2,1,0,3))
+		\end{align*}
+		
+		Existem várias configurações de $\omega$ as quais 8 lançamentos levam ao resultado acima.
+		Uma é $\omega=(3,1,6,6,1,4,6,3)$.
+		Logo:
+		\begin{align*}
+			\textbf{N}(\omega)=(N_1(\omega),N_2(\omega),\cdots,N_6(\omega))=(2,0,2,1,0,3)
+		\end{align*}
+		A probabilidade de sair essa configuração, levando em conta que os lançamentos são independentes é:
+		\begin{eqnarray*}
+			\mathbb{P}(\omega=(3,1,6,6,1,4,6,3))&=&\mathbb{P}(sair~3~no~1^o~E~sair~1~no~2^o~E\cdots~sair~3~no~8^o\\
+			& = &\mathbb{P}(sair~3~no~1^o)\mathbb{P}(sair~1~no~2^o)\cdots\mathbb{P}(sair~3~no~8^o)\\
+			& = &\theta_3~\theta_1~\theta_6~\theta_6~\theta_1~\theta_4~\theta_6~\theta_3\\
+			& = &\theta_{1}^{2}~\theta_{2}^{0}~\theta_{3}^{2}~\theta_{4}^{1}~\theta_{5}^{0}~\theta_{6}^{3}
+		\end{eqnarray*}
+		
+		Se a sequência $\omega$ tiver $n$ lançamentos:
+		\begin{eqnarray*}
+			n_1 & aparições~da~face 1\\
+			n_2 & aparições~da~face 2\\
+			&\vdots\\
+			n_6 & aparições~da~face 6
+		\end{eqnarray*}
+		
+		Teremos:
+		\begin{eqnarray*}
+			\mathbb{P}(\omega)=\theta_{1}^{n_1}~\theta_{2}^{n_2}~\theta_{3}^{n_3}~\theta_{4}^{n_4}~\theta_{5}^{n_5}~\theta_{6}^{n_6}
+		\end{eqnarray*}
+		
+		Dessa forma, seja $A$ o evento formado por todos os $\omega$ tais que $\mathbb{P}(\textbf{N}=(2,0,2,1,0,3))$
+		
+		$\mathbb{P}(\textbf{N}=(2,0,2,1,0,3))=\mathbb{P}(A)=\sum_{\omega\in A}\mathbb{P}(\omega)=c\times\theta_{1}^{2}~\theta_{2}^{0}~\theta_{3}^{2}~\theta_{4}^{1}~\theta_{5}^{0}~\theta_{6}^{3}$
+		Onde $c$ é o número de sequências de tamanho 8 tais que $\mathbb{P}(\textbf{N}=(2,0,2,1,0,3))$
+		$c$ é o número de permutações do vetor $\omega=(3,1,6,6,1,4,6,3)$.
+		Generalizando para k categorias, temos:
+		\begin{eqnarray*}
+			\textbf{N}=(N_1,N_2,\cdots,N_k)\sim\mathbb{M}(n;\theta_1,\cdots,\theta_n)
+		\end{eqnarray*}
+		
+		Então, chegamos na Equação~\ref{eq:eq1}.
+		
+		\item Distribuição de Poisson.
+		
+		Frequentemente utilizada em situações onde o número de ocorrências não tem um limite claro para o limite.
+		
+		$\mathbb{P}(Y=k)=\frac{\lambda^k}{k!}e^{-\lambda}$
+		
+		$\mathbb{E}(Y)=\lambda$
+	\end{itemize}
+\end{document}

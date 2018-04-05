@@ -108,6 +108,7 @@
 		Quanto maior o número de dados, mais confiável o resultado.
 		
 		\item 03/04
+		
 		Variáveis aleatórias: Lista de valores possíveis + probabilidades associadas
 		
 		\begin{tabular}{|c|c|c|}
@@ -136,7 +137,55 @@
 		
 		pchisq(15,4)-pchisq(10,4) $\rightarrow $ comando em R para saber o valor do teste qui-quadrado no intervalo [10,15] com 4 graus de liberdade.
 		
-		pchisq(1.13,4) $\rightarrow$ probabilidade de uma distribuição qui-quadrado com 4 graus de liberdade ser menor do que 1.13
+		pchisq(1.13,4) $\rightarrow$ probabilidade de uma distribuição qui-quadrado com 4 graus de liberdade ser menor do que 1.13.
+		
 		1-pchisq(1.13,4)=pvalors
+		
+		\item 05/04
+		
+		As variáveis são i.i.d. (independentes e identicamente distribuídas) se:
+		\begin{itemize}
+			\item elas forem todas independentes
+			\item possuírem todas a mesma distribuição
+		\end{itemize}
+		
+		\begin{itemize}
+			\item Transformação de V.A.s
+			
+			X é V.A.
+			
+			Y=g(X) é V.a.
+			
+			g(X) é função matemática.
+			
+			Distribuição de Y? 
+			\begin{itemize}
+				\item inverter g : Obter $F_y(y)=P(Y \leq~y)$ e deriva para obter a densidade $f_y(Y)=F'(y)$
+				\item Y=g(X) e $X=g^{-1}(Y)=h(Y)$
+				
+				então $f_y(y)=f_x(h(y)).|h'(y)|$
+				
+				Exemplo:$ f_x(x) = \left.
+				\begin{cases}
+					0, & \mbox{se } x \ni (0,1)\\
+					1, & \mbox{se } x \in (0,1)
+				\end{cases}
+				\right.
+				$
+				
+				$Y=X^2\rightarrow X=\sqrt{Y}=h(Y)$
+				
+				Então:
+				
+				$f_y(y)=f_x(\sqrt{y})\times |\frac{d\sqrt{y}}{dy}$
+				
+				Se quisermos $E(Y) = E(g(x)$
+				\begin{enumerate}
+					\item $E(Y) = \int y~f_Y(y)dy$ ($f_Y(y)$ é obtida de uma das duas maneiras anteriores)
+					\item $=\int_{-\infty}^{\infty} g(x)\times~f_x(x)dx$
+				\end{enumerate}
+			\end{itemize} 
+			
+		\end{itemize}
 	\end{itemize}
 \end{document}
