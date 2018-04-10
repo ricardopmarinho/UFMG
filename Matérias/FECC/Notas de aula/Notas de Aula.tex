@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{amsmath}
+\usepackage{amssymb}
 
 \definecolor{mGreen}{rgb}{0,0.6,0}
 \definecolor{mGray}{rgb}{0.5,0.5,0.5}
@@ -177,7 +178,7 @@
 				
 				Então:
 				
-				$f_y(y)=f_x(\sqrt{y})\times |\frac{d\sqrt{y}}{dy}$
+				$f_y(y)=f_x(\sqrt{y})\times |\frac{d\sqrt{y}}{dy}|$
 				
 				Se quisermos $E(Y) = E(g(x)$
 				\begin{enumerate}
@@ -185,7 +186,17 @@
 					\item $=\int_{-\infty}^{\infty} g(x)\times~f_x(x)dx$
 				\end{enumerate}
 			\end{itemize} 
-			
 		\end{itemize}
+		\item 10/04
+			
+		$\sum_{i=1}^{n}(Y_i-\bar{Y})^2=\sum_i(Y_i^2-2Y_i\bar{Y}+\bar{Y}^2)=\sum_iY_i^2-2\sum_i(Y_i\bar{Y})+\sum_i(\bar{Y}^2)=\sum_iY_i^2-2\bar{Y}\sum_i(Y_i)+n\bar{Y}^2=\sum_iY_i^2-2\bar{Y}.n\bar{Y}+n\bar{Y}^2=\sum_iY_i^2-n(\bar{Y}^2)$
+		
+		 $\mathbb{P}(X_1=i,X_2=j,X_4=k|X_3=2)=\frac{\mathbb{P}(X_1=i,X_2=j,X_4=k,X_3=2)}{\mathbb{P}(X_3=2)}$
+		 
+		 Exemplo:
+		 
+		 $\mathbb{P}(X_1=0,X_2=1,X_4=1|X_3=2)=\frac{\mathbb{P}(X_1=0,X_2=1,X_4=1,X_3=2)}{\mathbb{P})X_3=2)}=\frac{\frac{0.2}{100}}{\frac{32.4}{100}}$
+		 
+		 Para comparar resultados na distribuição condicional, basta olhar na tabela a condição não condicional.
 	\end{itemize}
 \end{document}

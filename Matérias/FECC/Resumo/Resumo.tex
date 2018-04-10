@@ -99,8 +99,9 @@
 		Se a amostra for grande, o número teórico $\mathbb{E}(X)$ é aproximadamente igual à média aritmética dos N elementos da amostra.
 		
 		\item Distribuição de Bernoulli
+		
 		É a distribuição mais simples: dois resultados possíveis
-		$X(\omega)~\in~\lbrace~0,1\rbrace~\forall~\omega~\in~\Omega$
+		$X(\omega)~\in~\lbrace0,1\rbrace~\forall~\omega~\in~\Omega$
 		
 		Duas probabilidades são definidas:
 		\begin{itemize}
@@ -110,7 +111,7 @@
 		
 		$p(0)+p(1)=1\rightarrow~p(1)=1-p(0)$
 		
-		É comum escrever $p(1)=p$ e $p(0)=q)$.
+		É comum escrever $p(1)=p$ e $p(0)=q$.
 		Daí, $\mathbb{E}(X)=1\times p+0\times(1-p)=p$
 		
 		Como a média aritmética dessa distribuição é a proporção de 1's na amostra:
@@ -235,5 +236,62 @@
 		$\mathbb{P}(Y=k)=\frac{\lambda^k}{k!}e^{-\lambda}$
 		
 		$\mathbb{E}(Y)=\lambda$
+		
+		\item Distribuição geométrica
+		
+		Y é o número de \textbf{fracassos} em uma sequência de ensaios independentes de Bernoulli até que um sucesso (probabilidade $\theta$) seja observado.
+		Logo, Y=0 significa que no primeiro ensaio houve um sucesso e $\mathbb{P}(Y=0)=\mathbb{P}(S)=\theta$.
+		Y=1 significa que o primeiro ensaio foi um fracasso e o segundo sucesso: $\mathbb{P}(Y=1)=\mathbb{P}(FS)=(1-\theta)\theta$.
+		
+		De forma geral, $\mathbb{P}(Y=k)=(1-\theta)^k\theta$
+		
+		Para uma geométrica com probabilidade de sucesso $\theta$:
+		
+		\begin{eqnarray*}
+			\mathbb{E}(Y)=\frac{1}{\theta}
+		\end{eqnarray*}
+		
+		Uma distribuição geométrica com $\theta$ alto significa que a probabilidade de sucesso é grande.
+		Logo, a função de distribuição de probabilidade se concentrará mais nos números iniciais.
+		
+		\item Distribuição de Zipf ou de Pareto
+		
+		$X\in {1,2,3,\cdots,N}$, sendo que N pode ser infinito.
+		
+		\begin{eqnarray*}
+			\mathbb{P}(X=k)=\frac{C}{k^(1+\alpha)},~com~\alpha > 0
+		\end{eqnarray*}
+		
+		\textbf{C} é uma constante que garante que as probabilidades somem 1:
+		
+		\begin{eqnarray*}
+			1=&\mathbb{P}(X=1)+\mathbb{P}(X=2)+\mathbb{P}(X=3)+\ldots\\
+			=&C(\frac{1}{1^{1+\alpha}}+\frac{1}{2^{1+\alpha}}+\frac{1}{3^{1+\alpha}}+\ldots\\
+			=&C\sum_{k=1}^N\frac{1}{k^{1+\alpha}}
+		\end{eqnarray*}
+		
+		O que implica que:
+		
+		\begin{eqnarray*}
+			C=\frac{1}{\sum_{k=1}^N\frac{1}{k^{1+\alpha}}}
+		\end{eqnarray*}
+		
+		\textbf{IMPORTANTE:} 
+		
+		\begin{eqnarray*}
+			\mathbb{P}(X=k)\propto\frac{1}{k^{1+\alpha}}
+		\end{eqnarray*}
+		
+		\textit{i.e.}, inversamente proporcional a uma potência de k.
+		
+		Com $\alpha=1.0$, a probabilidade de 0 é maior ($\approx 0.6$).
+		Com $\alpha=0.5$, a probabilidade de 0 diminui.
+		
+		Como $\mathbb{P}(Y=k)\propto\frac{1}{k}$:
+		\begin{eqnarray*}
+			\mathbb{P}(Y=1)\propto 1\\
+			\mathbb{P}(Y=2)\propto\frac{1}{2}\\
+			\mathbb{P}(Y=2)\propto\frac{1}{3}, etc
+		\end{eqnarray*}
 	\end{itemize}
 \end{document}
