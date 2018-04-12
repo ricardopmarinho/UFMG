@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{book}
+\documentclass[11pt,a4paper]{article}
 \usepackage[brazilian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -58,47 +58,136 @@
 
 \begin{document}
 \maketitle
-	\begin{itemize}
-		\item Regra de Bayes
-		Inverte as probabilidades de interesse.
+	\section{Regra de Bayes}
+	Inverte as probabilidades de interesse.
+	
+	Exemplo:
+	
+	$\mathbb{P}(A|B) = \frac{\mathbb{P}(B|A)\mathbb{P}(A)}{\mathbb{P}(B)}$
+	
+	\section{Função distribuição acumulada de probabilidade}
+	$\mathbb{F}(x)$ definida $\forall~x~\in~\mathbb{R}$ é dada por:
+	\begin{align*}
+		\mathbb{F}: & \mathbb{R}\rightarrow~[0,1]\\
+		& x\rightarrow~\mathbb{F}(x)=\mathbb{P}(X\leq~x)
+	\end{align*}
+		
+	Caso geral de $\mathbb{F}(x)$
+	\begin{align*}
+		\mathbb{F}(x)=\mathbb{P}(X\leq~x)=\sum_{x_i\leq~x}p(x_i)
+	\end{align*}
+		
+	\section{Esperança matemática ($\mathbb{E}(X)$)}
+		
+		\subsection{V.A. Discreta}
+			O valor esperado de uma V.A. discreta é a soma de seus valores possíveis ponderados pelas suas probabilidades respectivas.
+			\begin{align*}
+				\mathbb{E}(X)=\sum_i~x_ip(x_i)
+			\end{align*}
+	
+			Suponha que numa amostra grande de instâncias, $x_i$ apareceu $N_i$ vezes.
+			A probabilidade de $x_i$ ocorrer na amostra é sua frequência relativa, \textit{i.e.}:
+		
+			\begin{align*}
+				p(x_i)=\mathbb{P}(X=x_i)\approx~\frac{N_i}{N}
+			\end{align*}
+		
+			Logo:
+			\begin{align*}
+				\mathbb{E}(X)=\sum_i~x_ip(x_i)\approx \sum_i~x_i\frac{N_i}{N}
+			\end{align*}
+		
+			Se a amostra for grande, o número teórico $\mathbb{E}(X)$ é aproximadamente igual à média aritmética dos N elementos da amostra.
+	
+		\subsection{V.A. contínuas}
+	
+		\begin{eqnarray*}
+			\mathbb{E}(Y)=\int_{-\infty}^{\infty} yf(y)dy
+		\end{eqnarray*}
+		
+		\subsection{Linearidade da esperança}
+		
+		Caso geral: Y=a+bX, onde a e b são constantes.
+		Então $\mathbb{E}(X)$ e $\mathbb{E}(Y)$ estão relacionadas:
+		
+		\begin{eqnarray*}
+			\mathbb{E}(Y)=\mathbb{E}(a+bX)=a+b\mathbb{E}(X)
+		\end{eqnarray*}
 		
 		Exemplo:
 		
-		$\mathbb{P}(A|B) = \frac{\mathbb{P}(B|A)\mathbb{P}(A)}{\mathbb{P}(B)}$
+		Medimos uma temperatura aleatória \textbf{C} em graus Celsius.
+		Suponha que $\mathbb{E}(C)=28$ graus.
+		Seja F a V.A. que mede a temperatura em graus Fahrenheit.
+		Temos que C e F estão relacionadas por: $F=32+\frac{9}{5}C$.
+		Pelo caso geral da linearidade, a=32 e b=$\frac{9}{5}$.
+		Logo
 		
-		\item Função distribuição acumulada de probabilidade
-		$\mathbb{F}(x)$ definida $\forall~x~\in~\mathbb{R}$ é dada por:
-		\begin{align*}
-			\mathbb{F}: & \mathbb{R}\rightarrow~[0,1]\\
-			& x\rightarrow~\mathbb{F}(x)=\mathbb{P}(X\leq~x)
-		\end{align*}
+		\begin{eqnarray*}
+			\mathbb{E}(F)=&\mathbb{E}(32+\frac{9}{5}C)\\
+			=&32+\frac{9}{5}\mathbb{E}(C)\\
+			=&32+\frac{9}{5}\times 28\\
+			=&82.4
+		\end{eqnarray*}
 		
-		Caso geral de $\mathbb{F}(x)$
-		\begin{align*}
-			\mathbb{F}(x)=\mathbb{P}(X\leq~x)=\sum_{x_i\leq~x}p(x_i)
-		\end{align*}
+		Caso duas variáveis aleatórias sejam DISJUNTAS:
+		\begin{eqnarray*}
+			\mathbb{E}(X+Y)=\mathbb{E}(X)+\mathbb{E}(Y)
+		\end{eqnarray*}
 		
-		\item Esperança matemática ($\mathbb{E}(X)$)
+		Se independentes:
 		
-		O valor esperado de uma V.A. discreta é a soma de seus valores possíveis ponderados pelas suas probabilidades respectivas.
-		\begin{align*}
-			\mathbb{E}(X)=\sum_i~x_ip(x_i)
-		\end{align*}
+		\begin{eqnarray*}
+			\mathbb{E}(XY)=\mathbb{E}(X)\mathbb{E}(Y)
+		\end{eqnarray*}
 		
-		Suponha que numa amostra grande de instâncias, $x_i$ apareceu $N_i$ vezes.
-		A probabilidade de $x_i$ ocorrer na amostra é sua frequência relativa, \textit{i.e.}:
-		\begin{align*}
-			p(x_i)=\mathbb{P}(X=x_i)\approx~\frac{N_i}{N}
-		\end{align*}
+		\section{Variância}
 		
-		Logo:
-		\begin{align*}
-			\mathbb{E}(X)=\sum_i~x_ip(x_i)\approx \sum_i~x_i\frac{N_i}{N}
-		\end{align*}
+		\begin{eqnarray*}
+			\mathbb{V}(X)=\mathbb{E}((X-\mu)^2)
+		\end{eqnarray*}
+
+		Outra fórmula:
 		
-		Se a amostra for grande, o número teórico $\mathbb{E}(X)$ é aproximadamente igual à média aritmética dos N elementos da amostra.
+		\begin{eqnarray*}
+			\mathbb{V}(X)=&\mathbb{E}((X-\mu)^2)\\
+			=&\mathbb{E}(X^2)-(\mu)^2\\
+			=&\mathbb{E}(X^2)-(\mathbb{E}(X))^2
+		\end{eqnarray*}
 		
-		\item Distribuição de Bernoulli
+		Seja X uma v.a. com $\mu_x=\mathbb{E}(X)$ e $\sigma^2=\mathbb{V}(X)$.
+		Se Y=a+bX, então $\mu_y=\mathbb{E}(Y)=a+b\mu_x$ e
+		
+		\begin{eqnarray*}
+			\sigma_y^2=\mathbb{V}(Y)=\mathbb{V}(a+bX)=b^2\mathbb{V}(X)=b^2\sigma_x^2
+		\end{eqnarray*}
+		
+		Em termos de DP das v.a.'s:
+		
+		\begin{eqnarray*}
+			DP_y=|b|DP_X
+		\end{eqnarray*}
+		
+		Se as v.a.'s são independentes, temos:
+		
+		\begin{eqnarray*}
+			\mathbb{V}(X+Y)=\mathbb{V}(X)+\mathbb{V}(Y)
+		\end{eqnarray*}
+		
+		\subsection{Caso discreto}
+		
+		Como $\mathbb{E}(g(X))=\sum_ig(x_i)\mathbb{P}(X=x_i)$, e tomando $g(X)=(X-\mu)^2$, então:
+		
+		\begin{eqnarray*}
+			\mathbb{V}(X)=E((X-\mu)^2)=\sum_i(x_i-\mu)^2\mathbb{P}(X=x_i)
+		\end{eqnarray*}
+		
+		\subsection{Caso contínuo}
+		\begin{eqnarray*}
+			\mathbb{V}(X)=\mathbb{E}((X-\mu)^2)=\int(x-\mu)^2f(x)dx
+		\end{eqnarray*}
+		
+		\section{Distribuição de Bernoulli}
 		
 		É a distribuição mais simples: dois resultados possíveis
 		$X(\omega)~\in~\lbrace0,1\rbrace~\forall~\omega~\in~\Omega$
@@ -119,7 +208,7 @@
 			\mathbb{E}(X)\approx\hat{p}=\frac{1}{N}\sum_i~x_i
 		\end{align*}
 		
-		\item Distribuição Binomial
+		\section{Distribuição Binomial}
 		
 		Frequentemente utilizada quando um número máximo possível grande de $n$ de repetições e $\theta$ muito pequeno.
 		
@@ -146,7 +235,7 @@
 			\item $\mathbb{E}(Y)=n\theta$ e DP=$\sqrt{\mathbb{V}(Y)}=\sqrt{n\theta(1-\theta)}$
 		\end{itemize}
 		
-		\item Distribuição Multinomial
+		\section{Distribuição Multinomial}
 		
 		Mais de duas categorias de resultados nos experimentos, diferente da Binomial que são só duas (1 ou 0).
 		Ao fim de $n$ lançamentos, teremos um vetor aleatório multinomial que conta quantas vezes cada categoria apareceu no experimento.
@@ -229,7 +318,7 @@
 		
 		Então, chegamos na Equação~\ref{eq:eq1}.
 		
-		\item Distribuição de Poisson.
+		\section{Distribuição de Poisson}
 		
 		Frequentemente utilizada em situações onde o número de ocorrências não tem um limite claro para o limite.
 		
@@ -237,7 +326,7 @@
 		
 		$\mathbb{E}(Y)=\lambda$
 		
-		\item Distribuição geométrica
+		\section{Distribuição geométrica}
 		
 		Y é o número de \textbf{fracassos} em uma sequência de ensaios independentes de Bernoulli até que um sucesso (probabilidade $\theta$) seja observado.
 		Logo, Y=0 significa que no primeiro ensaio houve um sucesso e $\mathbb{P}(Y=0)=\mathbb{P}(S)=\theta$.
@@ -254,7 +343,7 @@
 		Uma distribuição geométrica com $\theta$ alto significa que a probabilidade de sucesso é grande.
 		Logo, a função de distribuição de probabilidade se concentrará mais nos números iniciais.
 		
-		\item Distribuição de Zipf ou de Pareto
+		\section{Distribuição de Zipf ou de Pareto}
 		
 		$X\in {1,2,3,\cdots,N}$, sendo que N pode ser infinito.
 		
@@ -293,5 +382,10 @@
 			\mathbb{P}(Y=2)\propto\frac{1}{2}\\
 			\mathbb{P}(Y=2)\propto\frac{1}{3}, etc
 		\end{eqnarray*}
-	\end{itemize}
+		
+		\section{Desigualdade de Tchebyshev}
+		
+		\begin{eqnarray*}
+			\mathbb{P}(|Y-\mu|>k\sigma)\leq \frac{1}{k^2}
+		\end{eqnarray*}
 \end{document}

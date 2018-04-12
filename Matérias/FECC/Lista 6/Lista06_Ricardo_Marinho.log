@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  10 APR 2018 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  12 APR 2018 13:17
 entering extended mode
 **./Lista06_Ricardo_Marinho.tex
 (Lista06_Ricardo_Marinho.tex
@@ -559,21 +559,31 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (Lista06_Ricardo_Marinho.aux)
 \openout1 = `Lista06_Ricardo_Marinho.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -634,89 +644,100 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \c@lstlisting=\count126
- [1
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
 
-Overfull \hbox (11.76424pt too wide) in paragraph at lines 76--83
+Overfull \hbox (11.76424pt too wide) in paragraph at lines 77--84
 [][] 
  []
 
 
-Overfull \hbox (11.32896pt too wide) in paragraph at lines 96--98
+Overfull \hbox (11.32896pt too wide) in paragraph at lines 97--99
 \T1/cmr/m/n/10.95 (encontrada em http://www.cultura.ufpa.br/dicas/biome/biotaqu
 i.htm): 
  []
 
 [2]
-Overfull \hbox (65.87532pt too wide) in paragraph at lines 160--161
+Overfull \hbox (65.87532pt too wide) in paragraph at lines 161--162
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (52.80971pt too wide) in paragraph at lines 161--162
+Overfull \hbox (52.80971pt too wide) in paragraph at lines 162--163
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (85.47366pt too wide) in paragraph at lines 162--163
+Overfull \hbox (85.47366pt too wide) in paragraph at lines 163--164
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (52.80974pt too wide) in paragraph at lines 164--165
+Overfull \hbox (52.80974pt too wide) in paragraph at lines 165--166
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (65.87532pt too wide) in paragraph at lines 166--167
+Overfull \hbox (65.87532pt too wide) in paragraph at lines 167--168
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (65.87532pt too wide) in paragraph at lines 168--169
+Overfull \hbox (65.87532pt too wide) in paragraph at lines 169--170
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (7.0802pt too wide) in paragraph at lines 170--171
+Overfull \hbox (7.0802pt too wide) in paragraph at lines 171--172
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [3]
-Overfull \hbox (0.54741pt too wide) in paragraph at lines 177--178
+Overfull \hbox (0.54741pt too wide) in paragraph at lines 178--179
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 [4] (Lista06_Ricardo_Marinho.aux) ) 
 Here is how much of TeX's memory you used:
- 5604 strings out of 493323
- 71598 string characters out of 3139059
- 165474 words of memory out of 3000000
- 9069 multiletter control sequences out of 15000+200000
- 11317 words of font info for 34 fonts, out of 3000000 for 9000
+ 5893 strings out of 493323
+ 74797 string characters out of 3139059
+ 165961 words of memory out of 3000000
+ 9340 multiletter control sequences out of 15000+200000
+ 13743 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,7n,35p,251b,1649s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Ricardo\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Ricardo\AppData\Local
-\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Ricardo\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb>
-Output written on Lista06_Ricardo_Marinho.pdf (4 pages, 91135 bytes).
+fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Ricardo\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Ricardo\A
+ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Use
+rs\Ricardo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728
+.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb>
+Output written on Lista06_Ricardo_Marinho.pdf (4 pages, 96921 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
