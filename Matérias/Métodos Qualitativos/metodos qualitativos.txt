@@ -1,0 +1,27 @@
+Aplicativos de mensagens:
+
+Liziane, Sofia, Mario, Ricardo.
+
+	
+	utiliza
+	|-------------------------------------------------------------------------------|
+	|Perfil demográfico| 			   |idade
+	|										48
+	|								   |local
+	|										BH
+	|-------------------------------------------------------------------------------|
+	|Aplicativos usados				   |Quais aplicativos diferentes				|
+	|										whatsapp,...							|
+	|								   |	Por que utilizar mais de um/só um		|
+	|-------------------------------------------------------------------------------|
+	|Perfil de uso					   |
+	|								   |Contexto de uso em que cada aplicativo é utilizado
+											Utiliza em outros contextos?	
+									   |frequência
+	|								   |se comunica por grupos
+											por quê?
+											contexto dos grupos
+									   |Confia na privacidade do aplicativo?
+											por quê?
+	|										várias vezes ao dia/diariamente
+	|-------------------------------------------------------------------------------|

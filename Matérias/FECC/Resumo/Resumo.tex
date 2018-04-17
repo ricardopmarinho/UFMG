@@ -388,4 +388,237 @@
 		\begin{eqnarray*}
 			\mathbb{P}(|Y-\mu|>k\sigma)\leq \frac{1}{k^2}
 		\end{eqnarray*}
+		
+		\section{Normal bivariada}
+		
+		Importante distribuição para um vetor aleatório: $\textbf{Y}=Y_1,Y_2$.
+		Cada v.a. segue uma distribuição gaussiana com sua própria esperança $\mu_j$ e variância $\sigma_{j}^{2}$, \textit{i.e.}, $Y_1\sim N(\mu_1,\sigma_1^2)$ e $Y_2\sim N(\mu_2,\sigma_2^2)$
+		As v.a.s não são (em geral) independentes, ou seja, $Y_2$ muda se soubermos o valor de $Y_1$.
+		$\rho\in [-1,1]$ controla o grau de associação, ou correlação, entre $Y_1$ e $Y_2$.
+		
+		$\mu_1$ e $\mu_2$ são as esperanças MARGINAIS de $Y_1$ e $Y_2$.
+		As esperanças podem ser condicionais, \textit{i.e.}, $\mathbb{E}(Y_1|Y_2=x)$ ou $\mathbb{E}(Y_2|Y_1=x)$.
+		Essas esperanças provavelmente não serão iguais.
+		A mesma análise vale para o desvio padrão $\sigma^2$.
+		
+		A distribuição da probabilidade condicional é uma normal: $(Y_2|Y_1=x)\approx N(\mu_{Y_2|Y_1=x},\sigma_{Y_2|Y_1=x}^2)$.
+		Assim, obtemos uma fórmula geral para expressar qual é essa distribuição.
+		Ela depende do coeficiente de correlação $\rho$:
+		
+		\begin{eqnarray*}
+			(Y_2|Y_1=y)\sim N(\mu_{Y_2|Y_1=y},\sigma_{Y_2|Y_1=y}^2)\\
+			com\\
+			\mu_{Y_2|Y_1=y}=\mu_2+\frac{\rho\sigma_2}{\sigma_1}(y-\mu_1)\\
+			e\\
+			\sigma_{Y_2|Y_1=y}=\sigma_2\sqrt{1-\rho^2}
+		\end{eqnarray*}
+		
+		\subsection{Matriz de covariância}
+		
+		Matriz 2x2 simétrica:
+		
+		\begin{eqnarray*}
+			\sum = \left[
+						\begin{tabular}{cc}
+						$\sigma_x^2$ & $\rho\sigma_x\sigma_y$\\
+						 $\rho\sigma_x\sigma_y$ & $\sigma_y^2$
+						\end{tabular}
+					\right]
+		\end{eqnarray*}
+		
+		Onde $\rho\in [-1,1]$ e $\sigma_x$ e $\sigma_y$ são os desvios padrões de cada marginal.
+		
+		A fórmula geral de uma normal bivariada é igual a
+		
+		\begin{eqnarray*}
+			f_\textbf{Y(y)}=cte\times e^{-\frac{1}{2}d^2(y,\mu)}
+		\end{eqnarray*}
+		
+		onde $d^2(y,\mu)$ é a distância entre o ponto \textbf{y} e o vetor esperado $\mu$.
+		Essa distância não é a euclidiana:
+		
+		$d^2(y,\mu)=(y-\mu)'\sum^{-1}(y-\mu)$
+		sendo que:
+		
+		\begin{eqnarray*}
+			\mu=(\mu_1,\mu_2)'=(\mathbb{E}(Y_1),\mathbb{E}(Y_2))
+		\end{eqnarray*}
+		
+		é um vetor-coluna 2x1 das esperanças marginais.
+		
+		Um vetor normal multivariado tem uma densidade conjunta que é proporcional à explonencial de menos uma medida de distância ao quadrado.
+		
+		\begin{eqnarray*}
+			f_\textbf{Y(y)}=cte\times e^{-\frac{1}{2}d^2(y,\mu)}
+		\end{eqnarray*}
+		
+		A densidade decai exponencialmente à medida que a distância ao quadrado entre \textbf{y} e \textbf{$\mu$} aumenta.
+		
+		\subsection{Desvio padronizado}
+		
+		O desvio padronizado é definido como segue:
+		
+		\begin{eqnarray*}
+			Z=\frac{Y-\mu}{\sigma}
+		\end{eqnarray*}
+		
+		Ou seja, ele é medido relativamente ao desvio-padrão $\mu$ da v.a. Y.
+		Se Z=2, significa um afastamento de 2 DPs em relação a $\mu$.
+		
+		Para medir a associação entre duas v.a.s $Y_1$ e $Y_2$, medidas num mesmo item, comparamos os desvios padronizados das duas, ou seja, comparamos $Z_1=\frac{Y_1-\mu_1}{\sigma_1}$ com $Z_2=\frac{Y_2-\mu_2}{\sigma_2}$.
+		Se um for grande implicar numa tendencia do outro aumentar, então elas possuem correlação.
+		
+		Uma forma de medir a correlação é o índice de correlação de Pearson:
+		
+		\begin{eqnarray*}
+			Z_1Z_2=\frac{Y_1-\mu_1}{\sigma_1}\times\frac{Y_2-\mu_2}{\sigma_2}
+		\end{eqnarray*}
+		
+		Se desvios grandes e positivos (negativos) de $Y_1$ tendem a ocorrer com desvios grandes e positivos (negativos) de $Y_2$, seu produto será maior (menor) ainda.
+		
+		O produto $Z_1Z_2$ é uma v.a., logo:
+		
+		\begin{eqnarray*}
+			\rho=Corr(Y_1,Y_2)=\mathbb{E}(Z_1Z_2)=\mathbb{E}(\frac{Y_1-\mu_1}{\sigma_1}\times\frac{Y_2-\mu_2}{\sigma_2})
+		\end{eqnarray*}
+		
+		Pela definição: 
+		
+		\begin{eqnarray*}
+			Corr(Y_1,Y_2)=&\mathbb{E}(Z_1Z_2)=Corr(Y_2,Y_1)\\
+			Corr(Y,Y)=&1
+		\end{eqnarray*}
+		
+		Se $Y_1$ é uma v.a. independente da v.a. $Y_2$, então $\rho=0$, formando um gráfico de dispersão como uma nuvem sem inclinação.
+		
+		Se $\rho\approx\pm 1$, então $Y_2$ é aproximadamente uma função linear perfeita de $Y_1$, \textit{i.e.}, os valores de ($Y_1,Y_2$) formarão  um gráfico de dispersão na forma aproximada de uma linha reta.
+		
+		\subsection{Matriz de correlação}
+		
+		Quando existem p v.a.s em um vetor, cria-se uma matriz de correlação pxp.
+		Na posição (i,j) temos:
+		
+		\begin{eqnarray*}
+			\rho_{ij}=Corr(Y_i,Y_j)=\mathbb{E}(\frac{Y_1-\mu_i}{\sigma_i}\times\frac{Y_j-\mu_j}{\sigma_j})
+		\end{eqnarray*}
+		
+		Como $Corr(Y_i,Y_J)=Corr(Y_J,Y_i)$, a matriz é simétrica, e como $Corr(Y_i,Y_i)=1$, a diagonal principal é toda de 1's.
+		
+		$\rho$ é invariante por mudança linear de escala.
+		Ou seja, se $Y_1,Y_2$ e $Y_3$ são v.a.s e $Y_3=2.3Y_2$, $Corr(Y_1,Y_2)=Corr(Y_1,2.3Y_3)=Corr(Y_1,Y_2)$
+		
+		Para estimar $\rho$, podemos utilizar as aproximações $\bar{Y}\approx\mathbb{E}(Y)$ e $S=\sqrt{\sum_i\frac{(Y_i-\bar{Y})^2}{n}}\approx\sigma$, ou seja:
+		
+		\begin{eqnarray*}
+			\rho=\mathbb{E}(\frac{Y_1-\mu_1}{\sigma_1}\times\frac{Y_2-\mu_2}{\sigma_2})\approx\mathbb{E}(\frac{Y_1-\bar{Y_1}}{S_1}\times\frac{Y_2-\bar{Y_2}}{S_2})
+		\end{eqnarray*}
+		
+		Para o desvio padronizado empírico, deve-se calcuar o desvio realizado de cada um dos \textit{n} valores das duas variáveis.
+		Para a variável 1, com os \textit{n} valores $y_{11},\ldots,y_{n1}$ da coluna 1 da tabela, calcule a nova coluna formada por
+		
+		\begin{eqnarray*}
+			z_{i1}=\frac{y_{i1}-\bar{y_1}}{S_1}
+		\end{eqnarray*}
+		
+		Da mesma forma, pode-se calcular $z_{i2}$ para a coluna 2
+		
+		\begin{eqnarray*}
+			z_{i2}=\frac{y_{i2}-\bar{y_2}}{S_2}
+		\end{eqnarray*}
+		
+		Então, multiplique as duas colunas de desvios padronizados e tire a sua média aritmética:
+		
+		\begin{eqnarray*}
+			r=\frac{1}{n}\sum_{i=1}^{n}z_{i1}z_{i2}=\frac{1}{n}\sum_{i=1}^{n}(\frac{y_{i1}-\bar{y_1}}{S_1})(\frac{y_{i2}-\bar{y_2}}{S_2})
+		\end{eqnarray*}
+		
+		A distância estatística de pontos, indica o quanto o ponto se distanciou da distribuição, ou seja, não é a distância euclidiana.
+		Esta distância pode ser vista como uma elipse em volta dos pontos.
+		
+		Para uma distância c>0 do centro, os pontos satisfazem a equação
+		
+		\begin{eqnarray*}
+			d(y,\mu)=\sqrt{(\frac{y_1-\mu_1}{\sigma_1})^2+(\frac{y_2-\mu_2}{\sigma_2})^2}=c
+		\end{eqnarray*}
+		
+		Os eixos da elipse possuem comprimentos iguais a $c\sigma_1$ e $c\sigma_2$.
+		O maior eixo da elipse e a variável com maior DP.
+		
+		Quantas vezes maior é o eixo maior em relação ao menor não depende de c:
+		
+		\begin{eqnarray*}
+			\frac{eixo maior}{eixo menor}=\frac{c\sigma_1}{c\sigma_2}=\frac{\sigma_1}{\sigma_2}
+		\end{eqnarray*}
+		
+		Considerando que $\sigma_1$ é o maior.
+		Variando c temos elipses concêntricas.
+		
+		\begin{eqnarray*}
+			d^2(y,\mu) = & (\frac{y_1-\mu_1}{\sigma_1})^2+(\frac{y_2-\mu_2}{\sigma_2})^2\\
+			=&(y_1-\mu_1,y_2-\mu_2)\left[
+			\begin{tabular}{cc}
+					$\frac{1}{\sigma_1^2}$ & 0\\
+					0&$\frac{1}{\sigma_2^2}$
+			\end{tabular}
+			\right]
+			\left(\begin{tabular}{c}
+				$y_1-\mu_1$\\
+				$y_2-\mu_2$
+			\end{tabular}
+			\right)\\
+			=&(y_1-\mu_1,y_2-\mu_2)\left[
+			\begin{tabular}{cc}
+					$\sigma_1^2$ & 0\\
+					0&$\sigma_2^2$
+			\end{tabular}
+			\right]^{-1}
+			\left(\begin{tabular}{c}
+				$y_1-\mu_1$\\
+				$y_2-\mu_2$
+			\end{tabular}
+			\right)\\
+			=&\left(\begin{tabular}{c}
+				$y_1-\mu_1$\\
+				$y_2-\mu_2$
+			\end{tabular}
+			\right)^{'}
+			\sum^{-1}
+			\left(\begin{tabular}{c}
+				$y_1-\mu_1$\\
+				$y_2-\mu_2$
+			\end{tabular}
+			\right)\\
+			=&(y-\mu)^{'}\sum^{-1}(y-\mu)
+		\end{eqnarray*}
+		
+		Neste caso, a matriz $\sum$ é diagonal com elementos positivos, então a elipse tem eixos paralelos aos eixos e o tamanho de cada eixo é proporcional ao $\sigma_1$ da variável associada.
+		
+		Num caso mais realista, a elipse está inclinada em relação aos eixos.
+		Neste caso
+		
+		\begin{eqnarray*}
+			\sum=\left[\begin{tabular}{cc}
+			$\sigma_1^2$&$\rho\sigma_1\sigma_2$\\
+			$\rho\sigma_1\sigma_2$&$\sigma_2^2$
+			\end{tabular}
+			\right]
+		\end{eqnarray*}
+		
+		onde $\rho=Corr(Y_1,Y_2)$ é o índice de correlação de Pearson entre $Y_1$ e $Y_2$.
+		Além disso, $-1\leq\rho\leq1$.
+		Os elementos $\rho\sigma_1\sigma_2$ são chamados de Covariância entre $Y_1$ e $Y_2$.
+		
+		Costumamos escrever $Cov(Y_1,Y_2)=\rho\sigma_1\sigma_2=\sigma_{12}$.
+		
+		Eixos da elipse: na direção dos AUTOVETORES da matriz $\sum^{-1}$, e o tamanho de cada eixo é proporcional à raiz do AUTOVALOR correspondente.
+		
+		Autovetor de uma matriz quadrada A é um vetor \textbf{y} tal que
+		
+		\begin{eqnarray*}
+			A\cdot\textbf{y}=\lambda\textbf{y}
+		\end{eqnarray*}
+		
+		onde $\lambda$ é uma constante (autovalor associado ao autovetor \textbf{y}).
+		
+		Aqui, utilizando a matriz de covariância como $\sigma^{-1}$, temos dois autovetores ortogonais entre si e os autovalores são sempre reais e positivos.
 \end{document}
