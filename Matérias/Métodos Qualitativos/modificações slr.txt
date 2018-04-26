@@ -1,0 +1,10 @@
+atividade slr
+	acm, capes, science direct, ieee explorer
+	
+	colocar quantos artigos retornaram em cada repositório
+	
+	
+	capes:
+		data de  publicação: últimos 10 anos
+		idioma: inglês
+		tópicos: video games e computer science
