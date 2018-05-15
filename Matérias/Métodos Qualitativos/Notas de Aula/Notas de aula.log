@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  23 APR 2018 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.10)  7 MAY 2018 16:26
 entering extended mode
 **"./Notas de aula.tex"
 ("Notas de aula.tex"
@@ -655,24 +655,24 @@ Underfull \hbox (badness 1448) in paragraph at lines 87--88
 []\T1/cmr/m/n/10.95 a pes-soa não en-tende
  []
 
-[2] ("Notas de aula.aux") ) 
+[2] [3] ("Notas de aula.aux") ) 
 Here is how much of TeX's memory you used:
  5342 strings out of 493323
  69499 string characters out of 3139059
- 152464 words of memory out of 3000000
+ 154464 words of memory out of 3000000
  8806 multiletter control sequences out of 15000+200000
  12100 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,35p,302b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Ricardo\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Ricardo\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Ricardo\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Ricar
-do\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Notas de aula.pdf" (2 pages, 42930 bytes).
+ 39i,9n,35p,319b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Ricardo\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\Ricardo\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Ricardo\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\R
+icardo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Notas de aula.pdf" (3 pages, 47371 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
+ 129 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
