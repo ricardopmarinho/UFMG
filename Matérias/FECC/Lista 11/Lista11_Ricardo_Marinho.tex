@@ -1,0 +1,102 @@
+\documentclass[11pt,a4paper]{book}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[inline]{enumitem}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\textbf{\color{black}},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single,
+    escapeinside={(*}{*)},
+    language=C
+}
+
+\makeatletter
+% This command ignores the optional argument for itemize and enumerate lists
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \quad\@itemlabel\hspace{\labelsep}
+\fi}
+\makeatother
+
+\newcommand{\onestaritem}{\refstepcounter{enumi}\item[$*$\theenumi.]}
+\newcommand{\twostaritem}{\refstepcounter{enumi}\item[$**$\theenumi.]}
+\DeclareMathOperator*{\maxi}{max}
+
+\title{Lista 11: Fundamentos Estatísticos para Ciência dos Dados}
+\author{Ricardo Pagoto Marinho}
+
+\begin{document}
+\maketitle
+	\begin{enumerate}
+		\item
+		\begin{itemize}
+		
+			\item
+			
+			Para o caso de $c(1|2)=c(2|1)$ e $\pi_1=\pi_2$, a comparação fica reduzida apenas à quantidade de indivíduos nas duas amostras, já que o que vai definir a região é qual função de densidade é a maior.
+			
+			\item 
+			
+			Para $\pi_1=0.001$, consequentemente $\pi_2=0.99$ e $c(1|2)=c(2|1)$, a função de classificação fica:
+			
+			\begin{eqnarray*}
+				\frac{f_1(x)}{f_2(x)}>&\frac{\pi_2}{\pi_1}\\
+				\frac{f_1(x)}{f_2(x)}>&\frac{0.99}{0.01}\\
+				\frac{f_1(x)}{f_2(x)}>&99\\
+				f_1(x)>&99f_2(x)
+			\end{eqnarray*}
+			
+			Ou seja, $f_1(x)$ deve ser mais do que 99 vezes maior do que $f_2(x)$
+			
+			\item
+			
+			Neste caso, com $c(1|2)=\frac{c(2|1)}{10}$ e $\pi_1=0.001$ e $\pi_2=0.99$ temos: 
+			
+			\begin{eqnarray*}
+				\frac{f_1(x)}{f_2(x)}>&\frac{c(1|2)}{c(2|1)}\frac{\pi_2}{\pi_1}\\
+				\frac{f_1(x)}{f_2(x)}>&\frac{c(2|1)}{10}\frac{1}{c(2|1)}\frac{0.99}{0.01}\\
+				\frac{f_1(x)}{f_2(x)}>&\frac{0.99}{0.1}\\
+				\frac{f_1(x)}{f_2(x)}>&9.9\\
+				f_1(x)>&9.9f_2(x)
+			\end{eqnarray*}
+			
+			Ou seja, a regra do item anterior fica 10 vezes menor, já que aqui, $f_1(x)$ deve ser mais do que 9.9 vezes maior do que $f_2(x)$.
+		\end{itemize}
+		
+		\item
+		
+		
+	\end{enumerate}
+\end{document}
