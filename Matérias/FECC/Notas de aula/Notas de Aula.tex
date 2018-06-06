@@ -52,6 +52,8 @@
 
 \newcommand{\onestaritem}{\refstepcounter{enumi}\item[$*$\theenumi.]}
 \newcommand{\twostaritem}{\refstepcounter{enumi}\item[$**$\theenumi.]}
+\DeclareMathOperator*{\maxi}{max}
+\DeclareMathOperator*{\mini}{min}
 
 \title{Notas de aula: Fundamentos Estatísticos para Ciência dos Dados}
 \author{Ricardo Pagoto Marinho}
@@ -249,5 +251,61 @@
 		 Definir se um indivíduo vem de uma população ou outra, pode-se fazer calculando as distâncias estatísticas do indivíduo para as populações ou fazer o produto $\frac{f_1(x)}{f_2(x)}$ das densidades.
 		 Se > 1, é da população 1, se <  1, da população 2.
 		 
+		 \item
+		 22/05
+		 
+		 Para resolver o sistema linear $Y\approx Xb$, com X com muito mais linhas do que colunas ( o que impede de achar a inversa), fazemos (com o exemplo dos apartamentos)
+		 
+		 \begin{eqnarray*}
+		 	Y\approx Xb\\
+		 	X^t Y\approx X^t Xb\\
+		 \end{eqnarray*}
+		 
+		 Onde $X^t$ é uma matriz 31x1500, Y é 31x1, X é 1500x31.
+		 Logo, $X^t Y$ é 31x1, $X^t X$ é 31x31, o que é resolvível.
+		 
+		 
+		 Espaço vetorial V=$R^1500$.
+		 
+		 Subespaço vetorial
+		 fechado para soma, multiplicação por escalar e possui o 0:
+		 
+		 $V_1+V_2\in W \in V$
+		 
+		 $cV_1\in W$
+		 
+		 $0 \in W$
+		 
+		 \begin{eqnarray*}
+		 	v_1=Xb_1, v_2=Xb_2 \rightarrow v_1+v_2=Xb_1+Xb_2=X(b_1+b_2)\\		 
+		 	3v_1=3Xb_1=X(3b_1)\\
+		 	b=\left(
+		 	\begin{tabular}{c}
+		 	0\\
+		 	0\\
+		 	\vdots\\
+		 	0
+		 	\end{tabular}
+		 	\right)
+		 \end{eqnarray*}
+		 
+		 linearmente independentes se NÃO existir uma combinação linear tal que:
+		 
+		 \begin{eqnarray*}
+		 	b_0[x_0]+b_1[x_1]+b_2[x_2]+b_3[x_3]=\left(
+		 	\begin{tabular}{c}
+		 	0\\
+		 	0\\
+		 	\vdots\\
+		 	0
+		 	\end{tabular}
+		 	\right)
+		 \end{eqnarray*}
+		
+		Queremos um vetor de coeficientes (b) que torne a soma dos erros de predição o menor possível:
+		
+		\begin{eqnarray*}
+			\mini_{b}\sum_{i=1}^{1500}(Y_i-\hat{Y_i})^2=\mini_b\sum_{i=1}^{1500}(Y_i-(linha~i~de~x\times b))^2
+		\end{eqnarray*}
 	\end{itemize}
 \end{document}
